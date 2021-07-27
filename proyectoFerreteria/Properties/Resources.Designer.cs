@@ -63,9 +63,9 @@ namespace proyectoFerreteria.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap log1 {
+        internal static System.Drawing.Bitmap close_window_26px {
             get {
-                object obj = ResourceManager.GetObject("log1", resourceCulture);
+                object obj = ResourceManager.GetObject("close_window_26px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -73,9 +73,19 @@ namespace proyectoFerreteria.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap login {
+        internal static System.Drawing.Bitmap close_window_48px {
             get {
-                object obj = ResourceManager.GetObject("login", resourceCulture);
+                object obj = ResourceManager.GetObject("close_window_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap login1F {
+            get {
+                object obj = ResourceManager.GetObject("login1F", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
