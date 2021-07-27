@@ -129,5 +129,17 @@
   <ItemGroup>
     <None Include="Resources\close_window_26px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontal_line_24px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontal_line_16px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontal_flag_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\horizontal_flag_24px.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

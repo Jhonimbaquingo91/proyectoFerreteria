@@ -42,6 +42,7 @@ namespace proyectoFerreteria
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -99,6 +100,7 @@ namespace proyectoFerreteria
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.checkBox1);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.button1);
@@ -202,6 +204,16 @@ namespace proyectoFerreteria
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña";
             // 
+            // textBox3
+            // 
+            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(17, 208);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.PasswordChar = '*';
+            this.textBox3.Size = new System.Drawing.Size(288, 33);
+            this.textBox3.TabIndex = 6;
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -243,5 +255,6 @@ namespace proyectoFerreteria
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
