@@ -65,5 +65,12 @@ namespace proyectoFerreteria
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Inicio().ShowDialog();
+            this.Close();
+        }
     }
 }
