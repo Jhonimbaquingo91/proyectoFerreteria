@@ -99,6 +99,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ventaPro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ventaPro.Designer.cs">
+      <DependentUpon>ventaPro.cs</DependentUpon>
+    </Compile>
     <Compile Include="verEmpleados.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,6 +161,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registro_Usuario.resx">
       <DependentUpon>Registro_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ventaPro.resx">
+      <DependentUpon>ventaPro.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="verEmpleados.resx">
       <DependentUpon>verEmpleados.cs</DependentUpon>

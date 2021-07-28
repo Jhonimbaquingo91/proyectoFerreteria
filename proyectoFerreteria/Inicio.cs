@@ -138,5 +138,10 @@ namespace proyectoFerreteria
         {
             this.Close();
         }
+
+        private void btnVenta_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new ventaPro());
+        }
     }
 }
