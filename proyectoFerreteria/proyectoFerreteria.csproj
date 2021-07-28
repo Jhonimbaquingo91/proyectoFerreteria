@@ -55,6 +55,12 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="activarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="activarEmpleado.Designer.cs">
+      <DependentUpon>activarEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,6 +93,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="verEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verEmpleados.Designer.cs">
+      <DependentUpon>verEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verHerramientas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verHerramientas.Designer.cs">
+      <DependentUpon>verHerramientas.cs</DependentUpon>
+    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -107,6 +125,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="activarEmpleado.resx">
+      <DependentUpon>activarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,6 +146,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registro_Usuario.resx">
       <DependentUpon>Registro_Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verEmpleados.resx">
+      <DependentUpon>verEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verHerramientas.resx">
+      <DependentUpon>verHerramientas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -179,6 +206,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\registro_usu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown_40px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hammer_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drill_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\herramienta-imagen-animada-0002.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

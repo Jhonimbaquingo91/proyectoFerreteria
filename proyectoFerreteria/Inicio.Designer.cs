@@ -29,10 +29,12 @@ namespace proyectoFerreteria
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnMin = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.lblHora = new System.Windows.Forms.Label();
             this.pnlSubMante = new System.Windows.Forms.Panel();
             this.btnActiviarEm = new System.Windows.Forms.Button();
             this.btnAgregarRol = new System.Windows.Forms.Button();
@@ -44,19 +46,26 @@ namespace proyectoFerreteria
             this.btnVerHerra = new System.Windows.Forms.Button();
             this.btnHerramientas = new System.Windows.Forms.Button();
             this.btnInicio = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.pnlContenedor = new System.Windows.Forms.Panel();
+            this.btnCerrar = new System.Windows.Forms.Button();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.pnlSubMante.SuspendLayout();
             this.pnlSubHerr.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.flowLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.btnMin);
             this.panel1.Controls.Add(this.btnSalir);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -101,6 +110,8 @@ namespace proyectoFerreteria
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.pnlMenu.Controls.Add(this.btnCerrar);
+            this.pnlMenu.Controls.Add(this.lblHora);
             this.pnlMenu.Controls.Add(this.pnlSubMante);
             this.pnlMenu.Controls.Add(this.btnMantenimiento);
             this.pnlMenu.Controls.Add(this.pnlSubHerr);
@@ -113,6 +124,17 @@ namespace proyectoFerreteria
             this.pnlMenu.Size = new System.Drawing.Size(251, 542);
             this.pnlMenu.TabIndex = 4;
             // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.BackColor = System.Drawing.Color.Transparent;
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.Color.Black;
+            this.lblHora.Location = new System.Drawing.Point(82, 510);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(0, 20);
+            this.lblHora.TabIndex = 1;
+            // 
             // pnlSubMante
             // 
             this.pnlSubMante.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(140)))), ((int)(((byte)(140)))), ((int)(((byte)(0)))));
@@ -120,7 +142,7 @@ namespace proyectoFerreteria
             this.pnlSubMante.Controls.Add(this.btnAgregarRol);
             this.pnlSubMante.Controls.Add(this.btnVerEm);
             this.pnlSubMante.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubMante.Location = new System.Drawing.Point(0, 362);
+            this.pnlSubMante.Location = new System.Drawing.Point(0, 440);
             this.pnlSubMante.Name = "pnlSubMante";
             this.pnlSubMante.Size = new System.Drawing.Size(251, 131);
             this.pnlSubMante.TabIndex = 10;
@@ -139,6 +161,7 @@ namespace proyectoFerreteria
             this.btnActiviarEm.Text = "Activar usuario";
             this.btnActiviarEm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnActiviarEm.UseVisualStyleBackColor = true;
+            this.btnActiviarEm.Click += new System.EventHandler(this.btnActiviarEm_Click);
             // 
             // btnAgregarRol
             // 
@@ -170,6 +193,7 @@ namespace proyectoFerreteria
             this.btnVerEm.Text = "Ver empleados";
             this.btnVerEm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVerEm.UseVisualStyleBackColor = true;
+            this.btnVerEm.Click += new System.EventHandler(this.btnVerEm_Click);
             // 
             // btnMantenimiento
             // 
@@ -177,7 +201,7 @@ namespace proyectoFerreteria
             this.btnMantenimiento.FlatAppearance.BorderSize = 0;
             this.btnMantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMantenimiento.Location = new System.Drawing.Point(0, 319);
+            this.btnMantenimiento.Location = new System.Drawing.Point(0, 397);
             this.btnMantenimiento.Name = "btnMantenimiento";
             this.btnMantenimiento.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnMantenimiento.Size = new System.Drawing.Size(251, 43);
@@ -194,7 +218,7 @@ namespace proyectoFerreteria
             this.pnlSubHerr.Controls.Add(this.btnAgregarHerr);
             this.pnlSubHerr.Controls.Add(this.btnVerHerra);
             this.pnlSubHerr.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubHerr.Location = new System.Drawing.Point(0, 187);
+            this.pnlSubHerr.Location = new System.Drawing.Point(0, 265);
             this.pnlSubHerr.Name = "pnlSubHerr";
             this.pnlSubHerr.Size = new System.Drawing.Size(251, 132);
             this.pnlSubHerr.TabIndex = 8;
@@ -244,6 +268,7 @@ namespace proyectoFerreteria
             this.btnVerHerra.Text = "Ver herramientas";
             this.btnVerHerra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVerHerra.UseVisualStyleBackColor = true;
+            this.btnVerHerra.Click += new System.EventHandler(this.btnVerHerra_Click);
             // 
             // btnHerramientas
             // 
@@ -251,7 +276,7 @@ namespace proyectoFerreteria
             this.btnHerramientas.FlatAppearance.BorderSize = 0;
             this.btnHerramientas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHerramientas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHerramientas.Location = new System.Drawing.Point(0, 144);
+            this.btnHerramientas.Location = new System.Drawing.Point(0, 222);
             this.btnHerramientas.Name = "btnHerramientas";
             this.btnHerramientas.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnHerramientas.Size = new System.Drawing.Size(251, 43);
@@ -267,7 +292,7 @@ namespace proyectoFerreteria
             this.btnInicio.FlatAppearance.BorderSize = 0;
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.Location = new System.Drawing.Point(0, 101);
+            this.btnInicio.Location = new System.Drawing.Point(0, 179);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnInicio.Size = new System.Drawing.Size(251, 43);
@@ -276,14 +301,11 @@ namespace proyectoFerreteria
             this.btnInicio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInicio.UseVisualStyleBackColor = true;
             // 
-            // flowLayoutPanel1
+            // timer1
             // 
-            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(251, 101);
-            this.flowLayoutPanel1.TabIndex = 5;
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // panel2
             // 
@@ -294,15 +316,59 @@ namespace proyectoFerreteria
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(990, 542);
             this.panel2.TabIndex = 5;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // pnlContenedor
             // 
             this.pnlContenedor.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pnlContenedor.Location = new System.Drawing.Point(37, 31);
+            this.pnlContenedor.Location = new System.Drawing.Point(37, 58);
             this.pnlContenedor.Name = "pnlContenedor";
             this.pnlContenedor.Size = new System.Drawing.Size(916, 472);
             this.pnlContenedor.TabIndex = 0;
             this.pnlContenedor.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlContenedor_Paint);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackgroundImage = global::proyectoFerreteria.Properties.Resources.shutdown_40px;
+            this.btnCerrar.FlatAppearance.BorderSize = 0;
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Location = new System.Drawing.Point(12, 499);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(41, 40);
+            this.btnCerrar.TabIndex = 1;
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowLayoutPanel1.Controls.Add(this.pictureBox1);
+            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(251, 179);
+            this.flowLayoutPanel1.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::proyectoFerreteria.Properties.Resources.drill_48px;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(12, -5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(50, 38);
+            this.button1.TabIndex = 2;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::proyectoFerreteria.Properties.Resources.herramienta_imagen_animada_0002;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(242, 170);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Inicio
             // 
@@ -320,9 +386,12 @@ namespace proyectoFerreteria
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.panel1.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);
+            this.pnlMenu.PerformLayout();
             this.pnlSubMante.ResumeLayout(false);
             this.pnlSubHerr.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.flowLayoutPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -347,5 +416,10 @@ namespace proyectoFerreteria
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel pnlContenedor;
+        private System.Windows.Forms.Label lblHora;
+        public System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button btnCerrar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

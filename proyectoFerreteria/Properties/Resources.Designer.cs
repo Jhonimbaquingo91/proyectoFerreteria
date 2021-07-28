@@ -83,6 +83,36 @@ namespace proyectoFerreteria.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap drill_48px {
+            get {
+                object obj = ResourceManager.GetObject("drill_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hammer_48px {
+            get {
+                object obj = ResourceManager.GetObject("hammer_48px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap herramienta_imagen_animada_0002 {
+            get {
+                object obj = ResourceManager.GetObject("herramienta-imagen-animada-0002", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap horizontal_flag_24px {
             get {
                 object obj = ResourceManager.GetObject("horizontal_flag_24px", resourceCulture);
@@ -126,6 +156,16 @@ namespace proyectoFerreteria.Properties {
         internal static System.Drawing.Bitmap login1F {
             get {
                 object obj = ResourceManager.GetObject("login1F", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap shutdown_40px {
+            get {
+                object obj = ResourceManager.GetObject("shutdown_40px", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

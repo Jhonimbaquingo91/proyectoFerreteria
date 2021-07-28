@@ -20,6 +20,7 @@ namespace proyectoFerreteria
         private void Inicio_Load(object sender, EventArgs e)
         {
             ocultar();
+            lblHora.Text = DateTime.Now.ToString();
         }
         private void btnMin_Click(object sender, EventArgs e)
         {
@@ -106,6 +107,36 @@ namespace proyectoFerreteria
         private void btnAgregarRol_Click(object sender, EventArgs e)
         {
             abrirFormulario(new Registro_Rol());
+        }
+
+        private void btnVerHerra_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new verHerramientas());
+        }
+
+        private void btnActiviarEm_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new activarEmpleado());
+        }
+
+        private void btnVerEm_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new verEmpleados());
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToString();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
