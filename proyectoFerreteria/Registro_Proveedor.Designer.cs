@@ -55,7 +55,7 @@ namespace proyectoFerreteria
             this.btnRegresar.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnRegresar.Location = new System.Drawing.Point(372, 325);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(102, 34);
+            this.btnRegresar.Size = new System.Drawing.Size(85, 30);
             this.btnRegresar.TabIndex = 1;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = false;
@@ -67,7 +67,7 @@ namespace proyectoFerreteria
             this.btnGuardar.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnGuardar.Location = new System.Drawing.Point(226, 325);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(123, 34);
+            this.btnGuardar.Size = new System.Drawing.Size(106, 30);
             this.btnGuardar.TabIndex = 0;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
@@ -103,9 +103,9 @@ namespace proyectoFerreteria
             this.label2.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(91, 263);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 19);
+            this.label2.Size = new System.Drawing.Size(139, 19);
             this.label2.TabIndex = 15;
-            this.label2.Text = "Nombre del encargado";
+            this.label2.Text = "Nombre Supervisor";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // panel4
@@ -122,7 +122,7 @@ namespace proyectoFerreteria
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(25, 16);
+            this.label1.Location = new System.Drawing.Point(178, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(335, 29);
             this.label1.TabIndex = 0;
@@ -131,7 +131,7 @@ namespace proyectoFerreteria
             // txtDireccion
             // 
             this.txtDireccion.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold);
-            this.txtDireccion.Location = new System.Drawing.Point(275, 212);
+            this.txtDireccion.Location = new System.Drawing.Point(244, 212);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(372, 27);
             this.txtDireccion.TabIndex = 12;
@@ -140,7 +140,7 @@ namespace proyectoFerreteria
             // txtApellido
             // 
             this.txtApellido.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold);
-            this.txtApellido.Location = new System.Drawing.Point(275, 255);
+            this.txtApellido.Location = new System.Drawing.Point(244, 255);
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(372, 27);
             this.txtApellido.TabIndex = 11;
@@ -149,7 +149,7 @@ namespace proyectoFerreteria
             // txtNombres
             // 
             this.txtNombres.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold);
-            this.txtNombres.Location = new System.Drawing.Point(275, 169);
+            this.txtNombres.Location = new System.Drawing.Point(244, 169);
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(372, 27);
             this.txtNombres.TabIndex = 10;
@@ -158,7 +158,7 @@ namespace proyectoFerreteria
             // txtTelefono
             // 
             this.txtTelefono.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold);
-            this.txtTelefono.Location = new System.Drawing.Point(492, 116);
+            this.txtTelefono.Location = new System.Drawing.Point(461, 119);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(155, 27);
             this.txtTelefono.TabIndex = 9;
@@ -167,7 +167,7 @@ namespace proyectoFerreteria
             // txtCedula
             // 
             this.txtCedula.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold);
-            this.txtCedula.Location = new System.Drawing.Point(226, 116);
+            this.txtCedula.Location = new System.Drawing.Point(177, 119);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(155, 27);
             this.txtCedula.TabIndex = 8;
@@ -178,7 +178,7 @@ namespace proyectoFerreteria
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label12.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(91, 119);
+            this.label12.Location = new System.Drawing.Point(88, 119);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(36, 19);
             this.label12.TabIndex = 7;
@@ -190,11 +190,11 @@ namespace proyectoFerreteria
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label11.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(91, 169);
+            this.label11.Location = new System.Drawing.Point(89, 169);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(73, 19);
+            this.label11.Size = new System.Drawing.Size(135, 19);
             this.label11.TabIndex = 6;
-            this.label11.Text = "Provedor";
+            this.label11.Text = "Nombre y Apellido";
             this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label9
@@ -214,7 +214,7 @@ namespace proyectoFerreteria
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label8.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(406, 119);
+            this.label8.Location = new System.Drawing.Point(350, 119);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(69, 19);
             this.label8.TabIndex = 3;
