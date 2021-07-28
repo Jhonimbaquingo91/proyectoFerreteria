@@ -61,6 +61,12 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registro_Proveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Proveedor.Designer.cs">
+      <DependentUpon>Registro_Proveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registro_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Proveedor.resx">
+      <DependentUpon>Registro_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registro_Usuario.resx">
       <DependentUpon>Registro_Usuario.cs</DependentUpon>
