@@ -72,5 +72,12 @@ namespace proyectoFerreteria
             new Inicio().ShowDialog();
             this.Close();
         }
+
+        private void lnkCrear_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new Registro_Usuario().ShowDialog();
+            this.Close();
+        }
     }
 }

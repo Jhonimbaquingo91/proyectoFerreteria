@@ -35,7 +35,7 @@ namespace proyectoFerreteria
             this.btnSalir = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lnkCrear = new System.Windows.Forms.LinkLabel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -120,7 +120,7 @@ namespace proyectoFerreteria
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Controls.Add(this.linkLabel1);
+            this.panel3.Controls.Add(this.lnkCrear);
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.checkBox1);
             this.panel3.Controls.Add(this.panel4);
@@ -135,18 +135,19 @@ namespace proyectoFerreteria
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // linkLabel1
+            // lnkCrear
             // 
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(109, 365);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(113, 15);
-            this.linkLabel1.TabIndex = 7;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "Crear nueva cuenta";
+            this.lnkCrear.AutoSize = true;
+            this.lnkCrear.BackColor = System.Drawing.Color.Transparent;
+            this.lnkCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lnkCrear.LinkColor = System.Drawing.Color.White;
+            this.lnkCrear.Location = new System.Drawing.Point(109, 365);
+            this.lnkCrear.Name = "lnkCrear";
+            this.lnkCrear.Size = new System.Drawing.Size(113, 15);
+            this.lnkCrear.TabIndex = 7;
+            this.lnkCrear.TabStop = true;
+            this.lnkCrear.Text = "Crear nueva cuenta";
+            this.lnkCrear.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkCrear_LinkClicked);
             // 
             // textBox3
             // 
@@ -291,7 +292,7 @@ namespace proyectoFerreteria
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel lnkCrear;
         private System.Windows.Forms.Button btnMin;
     }
 }

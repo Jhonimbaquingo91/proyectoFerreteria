@@ -54,12 +54,31 @@ namespace proyectoFerreteria
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Registro_Usuario_Load(object sender, EventArgs e)
         {
-            this.Hide();
-            login lg = new login();
-            lg.Show();
+
         }
 
+        private void panel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new login().ShowDialog();
+            this.Close();
+        }
     }
 }
