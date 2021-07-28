@@ -30,7 +30,7 @@ namespace proyectoFerreteria
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
             paintTransparentBackground(panel1, e);
-            using (Brush b = new SolidBrush(Color.FromArgb(100, panel3.BackColor)))
+            using (Brush b = new SolidBrush(Color.FromArgb(100, panel1.BackColor)))
             {
                 e.Graphics.FillRectangle(b, e.ClipRectangle);
             }
@@ -39,7 +39,7 @@ namespace proyectoFerreteria
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
             paintTransparentBackground(panel2, e);
-            using (Brush b = new SolidBrush(Color.FromArgb(128, panel3.BackColor)))
+            using (Brush b = new SolidBrush(Color.FromArgb(128, panel2.BackColor)))
             {
                 e.Graphics.FillRectangle(b, e.ClipRectangle);
             }
@@ -60,5 +60,6 @@ namespace proyectoFerreteria
             login lg = new login();
             lg.Show();
         }
+
     }
 }
