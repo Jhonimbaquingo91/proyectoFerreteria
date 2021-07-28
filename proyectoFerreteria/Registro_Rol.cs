@@ -49,5 +49,10 @@ namespace proyectoFerreteria
             new login().ShowDialog();
             this.Close();
         }
+
+        private void Registro_Rol_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
