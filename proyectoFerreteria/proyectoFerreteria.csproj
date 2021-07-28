@@ -67,6 +67,12 @@
     <Compile Include="Registro_Proveedor.Designer.cs">
       <DependentUpon>Registro_Proveedor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registro_Rol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Rol.Designer.cs">
+      <DependentUpon>Registro_Rol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registro_Usuario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Registro_Proveedor.resx">
       <DependentUpon>Registro_Proveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Rol.resx">
+      <DependentUpon>Registro_Rol.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registro_Usuario.resx">
       <DependentUpon>Registro_Usuario.cs</DependentUpon>

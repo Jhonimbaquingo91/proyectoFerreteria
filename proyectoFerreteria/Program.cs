@@ -16,7 +16,7 @@ namespace proyectoFerreteria
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Registro_Proveedor());
+            Application.Run(new login());
         }
     }
 }
