@@ -53,6 +53,7 @@ namespace proyectoFerreteria
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.pnlSubMante.SuspendLayout();
@@ -110,6 +111,7 @@ namespace proyectoFerreteria
             // pnlMenu
             // 
             this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.pnlMenu.Controls.Add(this.button2);
             this.pnlMenu.Controls.Add(this.btnCerrar);
             this.pnlMenu.Controls.Add(this.lblHora);
             this.pnlMenu.Controls.Add(this.pnlSubMante);
@@ -142,7 +144,7 @@ namespace proyectoFerreteria
             this.pnlSubMante.Controls.Add(this.btnAgregarRol);
             this.pnlSubMante.Controls.Add(this.btnVerEm);
             this.pnlSubMante.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubMante.Location = new System.Drawing.Point(0, 440);
+            this.pnlSubMante.Location = new System.Drawing.Point(0, 420);
             this.pnlSubMante.Name = "pnlSubMante";
             this.pnlSubMante.Size = new System.Drawing.Size(251, 131);
             this.pnlSubMante.TabIndex = 10;
@@ -201,7 +203,7 @@ namespace proyectoFerreteria
             this.btnMantenimiento.FlatAppearance.BorderSize = 0;
             this.btnMantenimiento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMantenimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMantenimiento.Location = new System.Drawing.Point(0, 397);
+            this.btnMantenimiento.Location = new System.Drawing.Point(0, 377);
             this.btnMantenimiento.Name = "btnMantenimiento";
             this.btnMantenimiento.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnMantenimiento.Size = new System.Drawing.Size(251, 43);
@@ -218,7 +220,7 @@ namespace proyectoFerreteria
             this.pnlSubHerr.Controls.Add(this.btnAgregarHerr);
             this.pnlSubHerr.Controls.Add(this.btnVerHerra);
             this.pnlSubHerr.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlSubHerr.Location = new System.Drawing.Point(0, 265);
+            this.pnlSubHerr.Location = new System.Drawing.Point(0, 245);
             this.pnlSubHerr.Name = "pnlSubHerr";
             this.pnlSubHerr.Size = new System.Drawing.Size(251, 132);
             this.pnlSubHerr.TabIndex = 8;
@@ -276,7 +278,7 @@ namespace proyectoFerreteria
             this.btnHerramientas.FlatAppearance.BorderSize = 0;
             this.btnHerramientas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHerramientas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHerramientas.Location = new System.Drawing.Point(0, 222);
+            this.btnHerramientas.Location = new System.Drawing.Point(0, 202);
             this.btnHerramientas.Name = "btnHerramientas";
             this.btnHerramientas.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnHerramientas.Size = new System.Drawing.Size(251, 43);
@@ -292,7 +294,7 @@ namespace proyectoFerreteria
             this.btnInicio.FlatAppearance.BorderSize = 0;
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInicio.Location = new System.Drawing.Point(0, 179);
+            this.btnInicio.Location = new System.Drawing.Point(0, 159);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
             this.btnInicio.Size = new System.Drawing.Size(251, 43);
@@ -346,7 +348,7 @@ namespace proyectoFerreteria
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(251, 179);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(251, 159);
             this.flowLayoutPanel1.TabIndex = 5;
             // 
             // button1
@@ -365,10 +367,25 @@ namespace proyectoFerreteria
             this.pictureBox1.Image = global::proyectoFerreteria.Properties.Resources.herramienta_imagen_animada_0002;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(242, 170);
+            this.pictureBox1.Size = new System.Drawing.Size(242, 150);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(0, 551);
+            this.button2.Name = "button2";
+            this.button2.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.button2.Size = new System.Drawing.Size(251, 43);
+            this.button2.TabIndex = 11;
+            this.button2.Text = "Reportes";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // Inicio
             // 
@@ -421,5 +438,6 @@ namespace proyectoFerreteria
         private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button2;
     }
 }
