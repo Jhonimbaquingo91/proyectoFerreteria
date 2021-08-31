@@ -30,5 +30,12 @@ namespace proyectoFerreteria
                 e.Graphics.FillRectangle(b, e.ClipRectangle);
             }
         }
+
+        private void btnNuevoE_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new Registro_Usuario().ShowDialog();
+            this.Close();
+        }
     }
 }

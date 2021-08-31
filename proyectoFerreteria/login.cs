@@ -73,6 +73,7 @@ namespace proyectoFerreteria
             {
                 this.Hide();
                 new Inicio().ShowDialog();
+                this.Close();
             }
             else
             {

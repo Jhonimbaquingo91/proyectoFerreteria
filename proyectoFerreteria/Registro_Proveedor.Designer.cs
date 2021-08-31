@@ -32,25 +32,25 @@ namespace proyectoFerreteria
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro_Proveedor));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btnGuardar = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.txtNombres = new System.Windows.Forms.TextBox();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtProveedor = new System.Windows.Forms.TextBox();
+            this.txtEncargado = new System.Windows.Forms.TextBox();
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.btnGuardar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -72,8 +72,8 @@ namespace proyectoFerreteria
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Controls.Add(this.txtDireccion);
-            this.panel2.Controls.Add(this.txtNombres);
-            this.panel2.Controls.Add(this.txtTelefono);
+            this.panel2.Controls.Add(this.txtProveedor);
+            this.panel2.Controls.Add(this.txtEncargado);
             this.panel2.Controls.Add(this.txtCedula);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
@@ -84,6 +84,47 @@ namespace proyectoFerreteria
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(908, 495);
             this.panel2.TabIndex = 4;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(81, 286);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(592, 172);
+            this.dataGridView1.TabIndex = 15;
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.btnGuardar);
+            this.panel3.Location = new System.Drawing.Point(699, 286);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(161, 172);
+            this.panel3.TabIndex = 14;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.button1.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.button1.Location = new System.Drawing.Point(23, 115);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(106, 38);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Eliminar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btnGuardar
+            // 
+            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnGuardar.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnGuardar.Location = new System.Drawing.Point(23, 22);
+            this.btnGuardar.Name = "btnGuardar";
+            this.btnGuardar.Size = new System.Drawing.Size(106, 38);
+            this.btnGuardar.TabIndex = 0;
+            this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // panel4
             // 
@@ -113,21 +154,23 @@ namespace proyectoFerreteria
             this.txtDireccion.Size = new System.Drawing.Size(322, 27);
             this.txtDireccion.TabIndex = 12;
             // 
-            // txtNombres
+            // txtProveedor
             // 
-            this.txtNombres.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold);
-            this.txtNombres.Location = new System.Drawing.Point(187, 164);
-            this.txtNombres.Name = "txtNombres";
-            this.txtNombres.Size = new System.Drawing.Size(322, 27);
-            this.txtNombres.TabIndex = 10;
+            this.txtProveedor.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold);
+            this.txtProveedor.Location = new System.Drawing.Point(187, 164);
+            this.txtProveedor.Name = "txtProveedor";
+            this.txtProveedor.Size = new System.Drawing.Size(322, 27);
+            this.txtProveedor.TabIndex = 10;
+            this.txtProveedor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtProveedor_KeyPress);
             // 
-            // txtTelefono
+            // txtEncargado
             // 
-            this.txtTelefono.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold);
-            this.txtTelefono.Location = new System.Drawing.Point(472, 114);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(219, 27);
-            this.txtTelefono.TabIndex = 9;
+            this.txtEncargado.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold);
+            this.txtEncargado.Location = new System.Drawing.Point(472, 114);
+            this.txtEncargado.Name = "txtEncargado";
+            this.txtEncargado.Size = new System.Drawing.Size(284, 27);
+            this.txtEncargado.TabIndex = 9;
+            this.txtEncargado.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEncargado_KeyPress);
             // 
             // txtCedula
             // 
@@ -136,6 +179,7 @@ namespace proyectoFerreteria
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(197, 27);
             this.txtCedula.TabIndex = 8;
+            this.txtCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCedula_KeyPress);
             // 
             // label12
             // 
@@ -181,46 +225,6 @@ namespace proyectoFerreteria
             this.label8.TabIndex = 3;
             this.label8.Text = "Encargado";
             // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.btnGuardar);
-            this.panel3.Location = new System.Drawing.Point(699, 286);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(161, 172);
-            this.panel3.TabIndex = 14;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.button1.Location = new System.Drawing.Point(23, 115);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(106, 38);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // btnGuardar
-            // 
-            this.btnGuardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnGuardar.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.btnGuardar.Location = new System.Drawing.Point(23, 22);
-            this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(106, 38);
-            this.btnGuardar.TabIndex = 0;
-            this.btnGuardar.Text = "Guardar";
-            this.btnGuardar.UseVisualStyleBackColor = false;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(81, 286);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(592, 172);
-            this.dataGridView1.TabIndex = 15;
-            // 
             // Registro_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -237,10 +241,10 @@ namespace proyectoFerreteria
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -251,8 +255,8 @@ namespace proyectoFerreteria
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.TextBox txtNombres;
-        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtProveedor;
+        private System.Windows.Forms.TextBox txtEncargado;
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;

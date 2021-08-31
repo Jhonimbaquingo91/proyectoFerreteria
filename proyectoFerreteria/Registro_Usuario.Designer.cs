@@ -118,6 +118,7 @@ namespace proyectoFerreteria
             this.txtApellido.Name = "txtApellido";
             this.txtApellido.Size = new System.Drawing.Size(155, 27);
             this.txtApellido.TabIndex = 11;
+            this.txtApellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtApellido_KeyPress);
             // 
             // txtNombres
             // 
@@ -126,6 +127,7 @@ namespace proyectoFerreteria
             this.txtNombres.Name = "txtNombres";
             this.txtNombres.Size = new System.Drawing.Size(155, 27);
             this.txtNombres.TabIndex = 10;
+            this.txtNombres.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombres_KeyPress);
             // 
             // txtTelefono
             // 
@@ -134,6 +136,7 @@ namespace proyectoFerreteria
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(155, 27);
             this.txtTelefono.TabIndex = 9;
+            this.txtTelefono.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTelefono_KeyPress);
             // 
             // txtCedula
             // 
@@ -142,6 +145,8 @@ namespace proyectoFerreteria
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(155, 27);
             this.txtCedula.TabIndex = 8;
+            this.txtCedula.TextChanged += new System.EventHandler(this.txtCedula_TextChanged);
+            this.txtCedula.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCedula_KeyPress);
             // 
             // label12
             // 
@@ -236,6 +241,7 @@ namespace proyectoFerreteria
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(193, 27);
             this.txtUser.TabIndex = 13;
+            this.txtUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUser_KeyPress);
             // 
             // label2
             // 
@@ -303,6 +309,7 @@ namespace proyectoFerreteria
             this.btnGuardar.TabIndex = 0;
             this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // panel5
             // 
