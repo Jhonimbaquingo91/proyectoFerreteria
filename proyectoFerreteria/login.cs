@@ -81,40 +81,15 @@ namespace proyectoFerreteria
                 txtUser.Text = "";
                 txtPass.Text = "";
                 txtUser.Focus();
+                 
             }
+            else
+            {
 
-                        
-                if (txtPass.Text == "")
-                {
-                    MessageBox.Show("Favor llenar los campos");
-                    
-                    txtPass.Text = "";
-                    txtPass.Focus();
-
-                }
-                else
-                {
-                    if (txtUser.Text == "")
-                    {
-                        MessageBox.Show("Favor llenar los campos");
-
-                        txtUser.Text = "";
-                        txtUser.Focus();
-
-                contador++;
-                if (contador == 3)
-                {
-                    MessageBox.Show("Usuario bloquado intentos superados");
-                }
-
-                    }
-                    else
-                    {
-                        this.Hide();
+                this.Hide();
                 new Inicio().ShowDialog();
-                    }
-                }
-            
+
+            }
 
         }
 

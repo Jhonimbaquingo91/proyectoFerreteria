@@ -53,7 +53,7 @@ namespace proyectoFerreteria
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.btnRegresar);
-            this.panel3.Location = new System.Drawing.Point(596, 347);
+            this.panel3.Location = new System.Drawing.Point(552, 342);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(154, 81);
             this.panel3.TabIndex = 34;
