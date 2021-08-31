@@ -222,7 +222,7 @@ namespace proyectoFerreteria
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "Registra_Clientes";
-            this.Text = "Clientes";
+            this.Text = " 1";
             this.panel3.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

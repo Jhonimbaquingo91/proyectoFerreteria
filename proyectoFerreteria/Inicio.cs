@@ -141,7 +141,6 @@ namespace proyectoFerreteria
 
         private void btnVenta_Click(object sender, EventArgs e)
         {
-            abrirFormulario(new ventaPro());
         }
 
         private void btnAgregarHerr_Click(object sender, EventArgs e)

@@ -69,19 +69,17 @@ namespace proyectoFerreteria
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text != "" && txtPass.Text != "")
-            {
-                this.Hide();
-                new Inicio().ShowDialog();
-                this.Close();
-            }
-            else
+
+
+
+            if (txtUser.Text == ""
+               && txtPass.Text == "")
             {
                 MessageBox.Show("Favor llenar los campos");
                 txtUser.Text = "";
                 txtPass.Text = "";
-                txtUser.Focus();
-                 
+
+
             }
             else
             {
@@ -91,7 +89,14 @@ namespace proyectoFerreteria
 
             }
 
+
+
         }
+
+
+
+
+
 
         private void cbxVer_CheckedChanged(object sender, EventArgs e)
         {
@@ -103,6 +108,11 @@ namespace proyectoFerreteria
             {
                 txtPass.UseSystemPasswordChar = true;
             }
+        }
+
+        private void txtUser_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

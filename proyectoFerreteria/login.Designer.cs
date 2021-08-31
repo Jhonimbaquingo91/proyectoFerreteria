@@ -44,6 +44,7 @@ namespace proyectoFerreteria
             this.txtUser = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.labelErrores = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -119,6 +120,7 @@ namespace proyectoFerreteria
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.labelErrores);
             this.panel3.Controls.Add(this.txtPass);
             this.panel3.Controls.Add(this.cbxVer);
             this.panel3.Controls.Add(this.panel4);
@@ -209,6 +211,7 @@ namespace proyectoFerreteria
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(288, 33);
             this.txtUser.TabIndex = 3;
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // label3
             // 
@@ -233,6 +236,15 @@ namespace proyectoFerreteria
             this.label2.Size = new System.Drawing.Size(74, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña";
+            // 
+            // labelErrores
+            // 
+            this.labelErrores.AutoSize = true;
+            this.labelErrores.BackColor = System.Drawing.Color.Bisque;
+            this.labelErrores.Location = new System.Drawing.Point(37, 276);
+            this.labelErrores.Name = "labelErrores";
+            this.labelErrores.Size = new System.Drawing.Size(0, 13);
+            this.labelErrores.TabIndex = 7;
             // 
             // login
             // 
@@ -277,5 +289,6 @@ namespace proyectoFerreteria
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button btnMin;
+        private System.Windows.Forms.Label labelErrores;
     }
 }
