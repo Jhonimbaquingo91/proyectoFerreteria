@@ -19,7 +19,7 @@ namespace proyectoFerreteria
 
         private void login_Load(object sender, EventArgs e)
         {
-
+            txtPass.UseSystemPasswordChar = true;
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
@@ -68,10 +68,12 @@ namespace proyectoFerreteria
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "" && textBox3.Text == "")
+            if (txtUser.Text == "" && txtPass.Text == "")
             {
-                labelErrores.Visible = true;
-                labelErrores.Text = "Debe llenar el Usuario y Contraseña.";
+                MessageBox.Show("Favor llenar los campos");
+                txtUser.Text = "";
+                txtPass.Text = "";
+                txtUser.Focus();
                  
             }
             else
@@ -84,26 +86,16 @@ namespace proyectoFerreteria
 
         }
 
-        private void lnkCrear_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void cbxVer_CheckedChanged(object sender, EventArgs e)
         {
-            this.Hide();
-            new Registro_Usuario().ShowDialog();
-            this.Close();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox3_TextChanged(object sender, EventArgs e)
-        {
-          
-        }
-
-        private void labelErrores_Click(object sender, EventArgs e)
-        {
-
+            if (cbxVer.Checked)
+            {
+                txtPass.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPass.UseSystemPasswordChar = true;
+            }
         }
     }
 }

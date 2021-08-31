@@ -35,17 +35,16 @@ namespace proyectoFerreteria
             this.btnSalir = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lnkCrear = new System.Windows.Forms.LinkLabel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.labelErrores = new System.Windows.Forms.Label();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.cbxVer = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnIngresar = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtUser = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.labelErrores = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -122,13 +121,12 @@ namespace proyectoFerreteria
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Controls.Add(this.labelErrores);
-            this.panel3.Controls.Add(this.lnkCrear);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.checkBox1);
+            this.panel3.Controls.Add(this.txtPass);
+            this.panel3.Controls.Add(this.cbxVer);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.btnIngresar);
             this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.txtUser);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(229, 12);
@@ -137,43 +135,37 @@ namespace proyectoFerreteria
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
-            // lnkCrear
+            // labelErrores
             // 
-            this.lnkCrear.AutoSize = true;
-            this.lnkCrear.BackColor = System.Drawing.Color.Transparent;
-            this.lnkCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnkCrear.LinkColor = System.Drawing.Color.White;
-            this.lnkCrear.Location = new System.Drawing.Point(109, 365);
-            this.lnkCrear.Name = "lnkCrear";
-            this.lnkCrear.Size = new System.Drawing.Size(113, 15);
-            this.lnkCrear.TabIndex = 7;
-            this.lnkCrear.TabStop = true;
-            this.lnkCrear.Text = "Crear nueva cuenta";
-            this.lnkCrear.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkCrear_LinkClicked);
+            this.labelErrores.AutoSize = true;
+            this.labelErrores.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.labelErrores.Location = new System.Drawing.Point(14, 286);
+            this.labelErrores.Name = "labelErrores";
+            this.labelErrores.Size = new System.Drawing.Size(0, 13);
+            this.labelErrores.TabIndex = 8;
             // 
-            // textBox3
+            // txtPass
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(17, 208);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
-            this.textBox3.Size = new System.Drawing.Size(288, 33);
-            this.textBox3.TabIndex = 6;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.txtPass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPass.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.Location = new System.Drawing.Point(17, 208);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(288, 33);
+            this.txtPass.TabIndex = 6;
             // 
-            // checkBox1
+            // cbxVer
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("Palatino Linotype", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.White;
-            this.checkBox1.Location = new System.Drawing.Point(17, 248);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(107, 21);
-            this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Ver contraseña";
-            this.checkBox1.UseVisualStyleBackColor = false;
+            this.cbxVer.AutoSize = true;
+            this.cbxVer.BackColor = System.Drawing.Color.Transparent;
+            this.cbxVer.Font = new System.Drawing.Font("Palatino Linotype", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxVer.ForeColor = System.Drawing.Color.White;
+            this.cbxVer.Location = new System.Drawing.Point(17, 248);
+            this.cbxVer.Name = "cbxVer";
+            this.cbxVer.Size = new System.Drawing.Size(107, 21);
+            this.cbxVer.TabIndex = 5;
+            this.cbxVer.Text = "Ver contraseña";
+            this.cbxVer.UseVisualStyleBackColor = false;
+            this.cbxVer.CheckedChanged += new System.EventHandler(this.cbxVer_CheckedChanged);
             // 
             // panel4
             // 
@@ -220,15 +212,14 @@ namespace proyectoFerreteria
             this.textBox2.Size = new System.Drawing.Size(288, 33);
             this.textBox2.TabIndex = 4;
             // 
-            // textBox1
+            // txtUser
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(17, 116);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(288, 33);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtUser.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtUser.Font = new System.Drawing.Font("Palatino Linotype", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUser.Location = new System.Drawing.Point(17, 116);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(288, 33);
+            this.txtUser.TabIndex = 3;
             // 
             // label3
             // 
@@ -253,16 +244,6 @@ namespace proyectoFerreteria
             this.label2.Size = new System.Drawing.Size(74, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña";
-            // 
-            // labelErrores
-            // 
-            this.labelErrores.AutoSize = true;
-            this.labelErrores.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.labelErrores.Location = new System.Drawing.Point(14, 286);
-            this.labelErrores.Name = "labelErrores";
-            this.labelErrores.Size = new System.Drawing.Size(0, 13);
-            this.labelErrores.TabIndex = 8;
-            this.labelErrores.Click += new System.EventHandler(this.labelErrores_Click);
             // 
             // login
             // 
@@ -296,17 +277,16 @@ namespace proyectoFerreteria
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtUser;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox cbxVer;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.LinkLabel lnkCrear;
+        private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button btnMin;
         private System.Windows.Forms.Label labelErrores;
     }
