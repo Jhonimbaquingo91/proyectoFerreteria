@@ -68,9 +68,20 @@ namespace proyectoFerreteria
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            new Inicio().ShowDialog();
-            this.Close();
+            if (textBox1.Text == "" && textBox3.Text == "")
+            {
+                labelErrores.Visible = true;
+                labelErrores.Text = "Debe llenar el Usuario y Contraseña.";
+                 
+            }
+            else
+            {
+
+                this.Hide();
+                new Inicio().ShowDialog();
+
+            }
+
         }
 
         private void lnkCrear_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -78,6 +89,21 @@ namespace proyectoFerreteria
             this.Hide();
             new Registro_Usuario().ShowDialog();
             this.Close();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void labelErrores_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

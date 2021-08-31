@@ -45,6 +45,7 @@ namespace proyectoFerreteria
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.labelErrores = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -120,6 +121,7 @@ namespace proyectoFerreteria
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Controls.Add(this.labelErrores);
             this.panel3.Controls.Add(this.lnkCrear);
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.checkBox1);
@@ -158,6 +160,7 @@ namespace proyectoFerreteria
             this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(288, 33);
             this.textBox3.TabIndex = 6;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // checkBox1
             // 
@@ -225,6 +228,7 @@ namespace proyectoFerreteria
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(288, 33);
             this.textBox1.TabIndex = 3;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label3
             // 
@@ -249,6 +253,16 @@ namespace proyectoFerreteria
             this.label2.Size = new System.Drawing.Size(74, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña";
+            // 
+            // labelErrores
+            // 
+            this.labelErrores.AutoSize = true;
+            this.labelErrores.BackColor = System.Drawing.Color.BlanchedAlmond;
+            this.labelErrores.Location = new System.Drawing.Point(14, 286);
+            this.labelErrores.Name = "labelErrores";
+            this.labelErrores.Size = new System.Drawing.Size(0, 13);
+            this.labelErrores.TabIndex = 8;
+            this.labelErrores.Click += new System.EventHandler(this.labelErrores_Click);
             // 
             // login
             // 
@@ -294,5 +308,6 @@ namespace proyectoFerreteria
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.LinkLabel lnkCrear;
         private System.Windows.Forms.Button btnMin;
+        private System.Windows.Forms.Label labelErrores;
     }
 }
