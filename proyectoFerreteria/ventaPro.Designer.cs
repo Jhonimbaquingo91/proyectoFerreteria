@@ -46,6 +46,8 @@ namespace proyectoFerreteria
             this.txtComprobante = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbxVenta = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -55,6 +57,8 @@ namespace proyectoFerreteria
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel2.Controls.Add(this.cbxVenta);
+            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.txtCliente);
             this.panel2.Controls.Add(this.label5);
@@ -236,6 +240,26 @@ namespace proyectoFerreteria
             this.dateTimePicker1.Size = new System.Drawing.Size(284, 27);
             this.dateTimePicker1.TabIndex = 26;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label6.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(492, 173);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(153, 19);
+            this.label6.TabIndex = 27;
+            this.label6.Text = "Seleccionar Producto";
+            // 
+            // cbxVenta
+            // 
+            this.cbxVenta.Font = new System.Drawing.Font("Candara", 12F, System.Drawing.FontStyle.Bold);
+            this.cbxVenta.FormattingEnabled = true;
+            this.cbxVenta.Location = new System.Drawing.Point(659, 170);
+            this.cbxVenta.Name = "cbxVenta";
+            this.cbxVenta.Size = new System.Drawing.Size(201, 27);
+            this.cbxVenta.TabIndex = 28;
+            // 
             // ventaPro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,5 +298,7 @@ namespace proyectoFerreteria
         private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox cbxVenta;
+        private System.Windows.Forms.Label label6;
     }
 }
