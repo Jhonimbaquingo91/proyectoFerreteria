@@ -35,6 +35,7 @@ namespace proyectoFerreteria
             this.label1 = new System.Windows.Forms.Label();
             this.txtCedula = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.btnNuevoE = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -44,6 +45,7 @@ namespace proyectoFerreteria
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.btnNuevoE);
             this.panel1.Controls.Add(this.dataGridView1);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.txtCedula);
@@ -103,6 +105,18 @@ namespace proyectoFerreteria
             this.label12.TabIndex = 7;
             this.label12.Text = "Buscar";
             // 
+            // btnNuevoE
+            // 
+            this.btnNuevoE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnNuevoE.Font = new System.Drawing.Font("Candara", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnNuevoE.Location = new System.Drawing.Point(648, 103);
+            this.btnNuevoE.Name = "btnNuevoE";
+            this.btnNuevoE.Size = new System.Drawing.Size(138, 34);
+            this.btnNuevoE.TabIndex = 17;
+            this.btnNuevoE.Text = "Nuevo empleado";
+            this.btnNuevoE.UseVisualStyleBackColor = false;
+            this.btnNuevoE.Click += new System.EventHandler(this.btnNuevoE_Click);
+            // 
             // verEmpleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -129,5 +143,6 @@ namespace proyectoFerreteria
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Button btnNuevoE;
     }
 }

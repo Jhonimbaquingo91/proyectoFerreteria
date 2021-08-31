@@ -35,7 +35,6 @@ namespace proyectoFerreteria
             this.btnSalir = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.labelErrores = new System.Windows.Forms.Label();
             this.txtPass = new System.Windows.Forms.TextBox();
             this.cbxVer = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -120,7 +119,6 @@ namespace proyectoFerreteria
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Controls.Add(this.labelErrores);
             this.panel3.Controls.Add(this.txtPass);
             this.panel3.Controls.Add(this.cbxVer);
             this.panel3.Controls.Add(this.panel4);
@@ -134,15 +132,6 @@ namespace proyectoFerreteria
             this.panel3.Size = new System.Drawing.Size(320, 406);
             this.panel3.TabIndex = 0;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
-            // 
-            // labelErrores
-            // 
-            this.labelErrores.AutoSize = true;
-            this.labelErrores.BackColor = System.Drawing.Color.BlanchedAlmond;
-            this.labelErrores.Location = new System.Drawing.Point(14, 286);
-            this.labelErrores.Name = "labelErrores";
-            this.labelErrores.Size = new System.Drawing.Size(0, 13);
-            this.labelErrores.TabIndex = 8;
             // 
             // txtPass
             // 
@@ -195,7 +184,7 @@ namespace proyectoFerreteria
             this.btnIngresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIngresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIngresar.ForeColor = System.Drawing.Color.White;
-            this.btnIngresar.Location = new System.Drawing.Point(17, 324);
+            this.btnIngresar.Location = new System.Drawing.Point(17, 309);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(288, 38);
             this.btnIngresar.TabIndex = 1;
@@ -288,6 +277,5 @@ namespace proyectoFerreteria
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Button btnMin;
-        private System.Windows.Forms.Label labelErrores;
     }
 }

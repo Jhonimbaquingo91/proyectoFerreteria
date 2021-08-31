@@ -41,5 +41,10 @@ namespace proyectoFerreteria
             }
 
         }
+
+        private void agregarHerramienta_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

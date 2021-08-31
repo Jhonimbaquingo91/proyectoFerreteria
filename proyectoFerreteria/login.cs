@@ -12,6 +12,7 @@ namespace proyectoFerreteria
 {
     public partial class login : Form
     {
+        int contador = 0;
         public login()
         {
             InitializeComponent();
@@ -68,16 +69,21 @@ namespace proyectoFerreteria
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text == "" && txtPass.Text == "")
+            if (txtUser.Text != "" && txtPass.Text != "")
+            {
+                this.Hide();
+                new Inicio().ShowDialog();
+                this.Close();
+            }
+            else
             {
                 MessageBox.Show("Favor llenar los campos");
                 txtUser.Text = "";
                 txtPass.Text = "";
                 txtUser.Focus();
-                 
             }
-            else
-            {
+
+                        
                 if (txtPass.Text == "")
                 {
                     MessageBox.Show("Favor llenar los campos");
@@ -95,6 +101,12 @@ namespace proyectoFerreteria
                         txtUser.Text = "";
                         txtUser.Focus();
 
+                contador++;
+                if (contador == 3)
+                {
+                    MessageBox.Show("Usuario bloquado intentos superados");
+                }
+
                     }
                     else
                     {
@@ -102,7 +114,7 @@ namespace proyectoFerreteria
                 new Inicio().ShowDialog();
                     }
                 }
-            }
+            
 
         }
 

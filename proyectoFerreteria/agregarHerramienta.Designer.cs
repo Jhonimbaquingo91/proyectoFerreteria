@@ -53,7 +53,7 @@ namespace proyectoFerreteria
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.btnRegresar);
-            this.panel3.Location = new System.Drawing.Point(553, 331);
+            this.panel3.Location = new System.Drawing.Point(596, 347);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(154, 81);
             this.panel3.TabIndex = 34;
@@ -113,7 +113,7 @@ namespace proyectoFerreteria
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(21, 87);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(465, 263);
+            this.dataGridView1.Size = new System.Drawing.Size(465, 321);
             this.dataGridView1.TabIndex = 27;
             // 
             // panel4
@@ -213,6 +213,7 @@ namespace proyectoFerreteria
             this.Controls.Add(this.panel4);
             this.Name = "agregarHerramienta";
             this.Text = "agregarHerramienta";
+            this.Load += new System.EventHandler(this.agregarHerramienta_Load);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel4.ResumeLayout(false);
