@@ -143,5 +143,10 @@ namespace proyectoFerreteria
         {
             abrirFormulario(new ventaPro());
         }
+
+        private void btnAgregarHerr_Click(object sender, EventArgs e)
+        {
+            abrirFormulario(new agregarHerramienta());
+        }
     }
 }

@@ -78,10 +78,30 @@ namespace proyectoFerreteria
             }
             else
             {
+                if (txtPass.Text == "")
+                {
+                    MessageBox.Show("Favor llenar los campos");
+                    
+                    txtPass.Text = "";
+                    txtPass.Focus();
 
-                this.Hide();
+                }
+                else
+                {
+                    if (txtUser.Text == "")
+                    {
+                        MessageBox.Show("Favor llenar los campos");
+
+                        txtUser.Text = "";
+                        txtUser.Focus();
+
+                    }
+                    else
+                    {
+                        this.Hide();
                 new Inicio().ShowDialog();
-
+                    }
+                }
             }
 
         }
